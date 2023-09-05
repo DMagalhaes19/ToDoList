@@ -1,0 +1,61 @@
+<!-- create a html page that follows this requirements 
+User Interface (UI): Design an intuitive and user-friendly interface using HTML and CSS. Include sections for adding tasks, displaying tasks, and marking tasks as completed.
+
+Task Input: Implement a form where users can input task details such as task name, description, due date, and priority level.
+
+Task Display: Show the list of tasks on the main page. Tasks can be displayed in a list or cards format, depending on your design preference.
+
+Task Manipulation: Enable users to add new tasks, mark tasks as completed, edit task details, and delete tasks. Implement buttons or icons for these actions.
+
+Task Sorting and Filtering: Add options to sort tasks by due date or priority. Include filters for displaying tasks based on their completion status.
+
+using the following technologies
+HTML
+CSS
+JavaScript
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/css/styles.css" >
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+        </header>
+        <main>
+            <form method="post" ">
+                <fieldset>
+                    <legend>Add Task</legend>
+                    <label for="taskName">Task Name</label>
+                    <input type="text" name="taskName" id="taskName" required>
+                    <label for="taskDescription">Task Description</label>
+                    <input type="text" name="taskDescription" id="taskDescription" required>
+                    <label for="taskDueDate">Task Due Date</label>
+                    <input type="date" name="taskDueDate" id="taskDueDate" required>
+                    <label for="taskPriority">Task Priority</label>
+                    <select name="taskPriority" id="taskPriority" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <input type="submit" value="Add Task">
+                </fieldset>
+            </form>
+            <div class="task-list">
+                <h2>Task List</h2>
+                <ul>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
